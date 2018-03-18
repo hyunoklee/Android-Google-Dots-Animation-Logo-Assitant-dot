@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000">
+
+        <RelativeLayout
+            android:id="@+id/windows_relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.example.mylibrary.GoogleDotThinking
+                android:id="@+id/GoogleDotThinking"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="0dp"/>
+
+            <com.example.mylibrary.GoogleDotUserSpeaking
+                android:id="@+id/GoogleDotUserListening"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/GoogleDotThinking" />
+
+            <com.example.mylibrary.GoogleDotListening
+                android:id="@+id/GoogleDotListening"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@+id/GoogleDotUserListening"
+                android:layout_below="@+id/GoogleDotThinking"/>
+
+            <com.example.mylibrary.GoogleAssitant
+                android:id="@+id/GoogleAssitant"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/GoogleDotUserListening"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView1"
+            android:src="@drawable/dora"
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="애니메이션 시작하기" />
+
+</LinearLayout>
