@@ -6,4 +6,4 @@ These packages can be launched by android studio
 
  When control mode is joystick, Android_controllerSample Project UI.
 
-<img src="1521338922253.gif" width="70%" height="70%">
+<img src="1521338922253.gif" width="30%" height="30%">
